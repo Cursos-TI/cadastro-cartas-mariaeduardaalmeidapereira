@@ -15,6 +15,9 @@ int populacao;
 float area;
 float pib;
 int pontos_turisticos;
+float densidade;
+float pib_per_capita;
+
 };
 
   // Área para entrada de dados
@@ -87,6 +90,12 @@ printf ("Area: %.2fkm2\n", carta1.area);
 printf ("PIB: %f bilhoes de reais\n", carta1.pib);
 printf ("Pontos turisticos: %d\n", carta1.pontos_turisticos);
 
+carta1.densidade = carta1.populacao/carta1.area;
+printf ("densidade populacional: %f\n",carta1.densidade);
+
+carta1.pib_per_capita = carta1.pib/carta1.populacao;
+printf ("pib per capita: %f\n", carta1.pib_per_capita);
+
 printf ("\n ----- Dados da Carta 02 -----\n");
 
 printf ("Estado: %c\n" , carta2.estado);
@@ -96,6 +105,12 @@ printf ("Populacao: %d habitantes\n" , carta2.populacao);
 printf ("Area: %.2fkm2\n", carta2.area);
 printf ("PIB: %f bilhoes de reais\n", carta2.pib);
 printf ("Pontos turisticos: %d\n", carta2.pontos_turisticos);
+
+carta2.densidade = carta2.populacao/carta2.area;
+printf ("densidade populacional: %f\n", carta2.densidade);
+
+carta2.pib_per_capita = carta2.pib/carta2.populacao;
+printf ("pib per capita: %f\n", carta2.pib_per_capita);
 
 return 0;
 }
