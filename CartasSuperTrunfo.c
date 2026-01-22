@@ -145,7 +145,7 @@ printf ("Densidade populacional: %f\n", carta2.densidade);
 carta2.pib_per_capita = carta2.pib/carta2.populacao;
 printf ("PIB per capita: %f\n", carta2.pib_per_capita);
 
-printf ("\n------RESULTADO------\n");
+printf ("\n------RESULTADO FINAL------\n");
 
 int resultado_populacao = (carta1.populacao > carta2.populacao);
 printf ("Populacao: a carta %d venceu a carta %d(%d)\n",
